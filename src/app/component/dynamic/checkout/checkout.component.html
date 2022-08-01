@@ -1,0 +1,45 @@
+<!----------------------------  Checkout Page ---------------------------- -->
+<div class="container-fluid">
+  <div class="header">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="left">
+          <span>About Product</span>
+        </div>
+      </div>
+      <div class="col-md-6 center button-responsive">
+        <div class="right">
+          <div class="container-fluid">
+            <div class="page">
+              <div class="custom-row">
+                <span class="input text-center">
+                  <label class="label price-responsive d-inline">Price: <b>{{productData.price |
+                      currency:'INR'}}</b></label>
+
+                  <input class="quantity d-inline" type="number" id="quantity" value="1" name="quantity"
+                    min='increaseQty()' max="decreaseQty()" />
+                </span>
+                <button (click)="pay()" class="btn btn-primary custom-button">Buy Now</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!----------------------------  Send data from parent to child ---------------------------- -->
+<div class="container-fluid product-info  section">
+  <div class="row">
+
+    <div class="col-lg-5 order-lg-2 right-side">
+      <app-product-image [product]="productData"></app-product-image>
+    </div>
+
+    <div class="col-lg-7 order-lg-1 left-side">
+      <app-product-info [product]="productData"></app-product-info>
+    </div>
+  </div>
+</div>

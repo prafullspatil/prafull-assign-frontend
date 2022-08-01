@@ -1,0 +1,20 @@
+@import "/src/assets/color/color.scss";
+
+.custom-navbar {
+
+  margin-left: 9%;
+  background-color: $mywhite;
+  font-weight: 500;
+  font-size: small;
+}
+
+.navbar-expand-sm .navbar-nav .nav-link {
+  font-weight: 600;
+  font-size: 14px;
+  color: $myblack;
+  cursor: pointer;
+}
+
+.navbar-brand {
+  margin-right: 38px;
+}

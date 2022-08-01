@@ -1,0 +1,24 @@
+<!----------------------------  Backend Product Image Page ---------------------------- -->
+<div id="carouselExampleInterval" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active"
+      aria-current="true"></button>
+    <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="1000">
+      <img src="{{product.images[0].url1}}" class="d-block" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="{{product.images[0].url2}}" class="d-block" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="{{product.images[0].url3}}" class="d-block" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="{{product.images[0].url4}}" class="d-block" alt="...">
+    </div>
+  </div>
+</div>

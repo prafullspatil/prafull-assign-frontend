@@ -1,0 +1,54 @@
+.product-name {
+    font-size: 32px;
+    margin: 15px 0 0 65px;
+    font-weight: 500;
+
+}
+
+.product-desc {
+    font-family: 'Poppins';
+    margin: 20px 0 0 55px;
+    font-size: 14px;
+    overflow: auto;
+
+}
+
+.product-message {
+    margin: 10px 0 0 70px;
+    font-size: 12px;
+}
+
+.category {
+    padding: 5npx;
+    margin: 10px 0 0 57px;
+}
+
+.product-info {
+    height: fit-content;
+
+}
+
+@media only screen and (max-width: 896px) {
+
+
+    .product-name {
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0;
+        font-weight: 100;
+    }
+
+    .category {
+        font-size: 0;
+    }
+
+    .product-message {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .product-desc {
+        margin: 0;
+    }
+}

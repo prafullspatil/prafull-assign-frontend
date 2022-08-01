@@ -1,0 +1,161 @@
+@import "/src/assets/color/color.scss";
+
+input[type="number"] {
+  background-color: $my-secondary-white;
+  border: $mywhite;
+  width: 70px;
+  height: 40px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.custom-row {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.label {
+  font-weight: 400;
+  font-size: 14px;
+  color: $myblack;
+  margin-right: 20px;
+}
+
+.custom-button {
+  width: 120px;
+  height: 45px;
+  border-radius: 30px;
+  margin: 0 15px 0 0;
+}
+
+.header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  height: 60px;
+  background-color: $mywhite;
+}
+
+.center {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.right {
+  margin-top: 5px;
+}
+
+.left {
+  margin-top: 15px;
+}
+
+.left span {
+  font-weight: 600;
+  font-size: 14px;
+  color: #666666;
+  margin-left: 42%;
+  border-bottom: 2px solid #0156ff;
+}
+
+.product-info {
+  height: fit-content;
+
+}
+
+.left-side {
+  background-color: $my-secondary-white;
+  width: fit-content;
+  height: 500px;
+}
+
+@media only screen and (max-width: 700px) {
+
+  .right-side {
+    margin-right: 100px;
+  }
+
+  .left-side {
+    width: fit-content;
+    height: fit-content;
+    background-color: $mywhite;
+  }
+
+
+  .section {
+    max-height: 450px;
+    overflow-y: auto;
+    direction: ltr;
+    scrollbar-color: #d4aa70 #e4e4e4;
+    scrollbar-width: thin;
+
+
+  }
+
+  .section::-webkit-scrollbar {
+    width: 13px;
+  }
+
+  .section::-webkit-scrollbar-track {
+    background-color: $mywhite;
+    border-radius: 100px;
+  }
+
+  .section::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    border: 5px solid transparent;
+    background-clip: content-box;
+    background-color: $mywhite;
+  }
+
+  .button-responsive {
+    margin-top: 480px;
+    position: sticky;
+  }
+
+  .price-responsive {
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .right-side {
+    margin: 0;
+  }
+
+}
+
+
+@media screen and (min-device-width: 390px) and (max-device-width: 844px) {
+
+  .section {
+    max-height: 650px;
+    overflow-y: auto;
+    direction: ltr;
+    scrollbar-color: #d4aa70 #e4e4e4;
+    scrollbar-width: thin;
+
+  }
+
+  .section::-webkit-scrollbar {
+    width: 13px;
+  }
+
+  .section::-webkit-scrollbar-track {
+    background-color: $mywhite;
+    border-radius: 100px;
+  }
+
+  .section::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    border: 5px solid transparent;
+    background-clip: content-box;
+    background-color: $mywhite;
+  }
+
+  .button-responsive {
+    margin-top: 700px;
+    position: sticky;
+  }
+}

@@ -1,0 +1,36 @@
+@import "/src/assets/color/color.scss";
+.black-navbar {
+  background-color: $myblack;
+  display: flex;
+  justify-content: center;
+
+}
+
+.black-navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.black-navbar-text {
+  margin: 0px;
+  color: #fff;
+  font-weight: 100;
+  font-size: 13px;
+  margin: 3px;
+}
+
+.header-info {
+  color: $mywhite;
+}
+
+@media only screen and (max-width: 770px) {
+  .header-info {
+    font-size: 10px;
+  }
+
+  .black-navbar-text {
+    font-size: 10px;
+    margin-top: 5px;
+  }
+}
