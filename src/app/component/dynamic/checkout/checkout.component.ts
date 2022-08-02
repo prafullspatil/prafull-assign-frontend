@@ -29,9 +29,9 @@ export class CheckoutComponent implements OnInit {
   async pay(qty:any) {
     // console.log(data);
     const payment = {
-      name: this.productData.productName,
+      name: this.productData.name,
       currency: 'inr',
-      image: this.productData.images.url1,
+      // image: this.productData.images.url1,
       amount: this.productData.price * 100,
       quantity: qty,
       cancelUrl: 'http://localhost:4200/cancel',

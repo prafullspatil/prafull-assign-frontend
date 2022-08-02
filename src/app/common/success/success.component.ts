@@ -16,7 +16,7 @@ export class SuccessComponent implements OnInit {
   ngOnInit() {
     Swal.fire({
       title: 'Purchase Successful',
-      html: '<div><p style="font-family:"Poppins";font-style: normal;font-weight: 300;font-size: 18px;line-height: 30px;">You will get your product soon! <br /><br/>to experience the spatial audio withadaptive EQ that tunes music to your ears.</p></div>',
+      html: '<div><p style="font-family:"Poppins";font-style: normal;font-weight: 300;font-size: 18px;line-height: 30px;">You will get your product soon! <br /><br/>to experience the spatial audio with adaptive EQ that tunes music to your ears.</p></div>',
       imageUrl: 'assets/image/success.png',
       imageWidth: 100,
       imageHeight: 100,
