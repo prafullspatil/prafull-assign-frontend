@@ -76,7 +76,9 @@ input[type="number"] {
   .right-side {
     margin-right: 100px;
   }
-
+  .left{
+    display: none;
+  }
   .left-side {
     width: fit-content;
     height: fit-content;
@@ -85,7 +87,7 @@ input[type="number"] {
 
 
   .section {
-    max-height: 450px;
+    max-height: fit-content;
     overflow-y: auto;
     direction: ltr;
     scrollbar-color: #d4aa70 #e4e4e4;
@@ -110,10 +112,10 @@ input[type="number"] {
     background-color: $mywhite;
   }
 
-  .button-responsive {
-    margin-top: 480px;
-    position: sticky;
-  }
+  // .button-responsive {
+  //   margin-top: 520px;
+  //   position: sticky;
+  // }
 
   .price-responsive {
     font-size: 10px;
@@ -123,14 +125,27 @@ input[type="number"] {
   .right-side {
     margin: 0;
   }
-
+  .right-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .right{
+    position: fixed;
+    background-color: #FFFFFF;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 9999;
+    max-height: min-content;
+  }
 }
 
 
 @media screen and (min-device-width: 390px) and (max-device-width: 844px) {
 
   .section {
-    max-height: 650px;
+    max-height: fit-content;
     overflow-y: auto;
     direction: ltr;
     scrollbar-color: #d4aa70 #e4e4e4;
@@ -158,4 +173,13 @@ input[type="number"] {
     margin-top: 700px;
     position: sticky;
   }
+  
+  .right-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  // .header{
+  //   display: none;
+  // }
 }

@@ -4,7 +4,7 @@
     <div class="row">
       <div class="col-md-6">
         <div class="left">
-          <span>About Product</span>
+          <span class="about-product">About Product</span>
         </div>
       </div>
       <div class="col-md-6 center button-responsive">
@@ -17,9 +17,9 @@
                       currency:'INR'}}</b></label>
 
                   <input class="quantity d-inline" type="number" id="quantity" value="1" name="quantity"
-                    min='increaseQty()' max="decreaseQty()" />
+                    min='0' max="3" #qty />
                 </span>
-                <button (click)="pay()" class="btn btn-primary custom-button">Buy Now</button>
+                <button (click)="pay(qty.value)" class="btn btn-primary custom-button">Buy Now</button>
               </div>
             </div>
 

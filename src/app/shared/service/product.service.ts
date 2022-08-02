@@ -9,6 +9,6 @@ export class ProductService {
   constructor(private http: HttpClient) { }
 
   getProductById() {
-    return this.http.get<any>('http://localhost:9091/api/v1/get-product/1');
+    return this.http.get<any>('http://localhost:9091/api/get-product/1');
   }
 }

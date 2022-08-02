@@ -1,6 +1,6 @@
 img {
 
-  margin: 50px 0 20px 100px;
+  margin: 50px 0 20px 90px;
   width: 400px;
   height: 300px;
 
@@ -15,3 +15,16 @@ img {
 .carousel-indicators [data-bs-target] {
   background-color: #0156FF;
 }
+@media only screen and (max-width: 896px) {
+
+
+  // .images{
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   margin-right: 20px;
+  // }
+}
+
+
+

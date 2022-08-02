@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class StripService {
-  url: any = 'http://localhost:9091/api/payment';
+  url: any = 'http://localhost:9091/api/checkout-payment';
   constructor(private http: HttpClient) { }
 
   stripCheckout(data: any) {
