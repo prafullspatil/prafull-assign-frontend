@@ -6,24 +6,24 @@ img {
 
 }
 
+
 .carousel-indicators button {
   width: 10px;
   height: 10px;
   border-radius: 100%;
+}
+.carousel-indicators {
+left: 80px;
 }
 
 .carousel-indicators [data-bs-target] {
   background-color: #0156FF;
 }
 @media only screen and (max-width: 896px) {
-
-
-  // .images{
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   margin-right: 20px;
-  // }
+  .carousel-indicators {
+    left: 0;
+    }
+    
 }
 
 

@@ -10,6 +10,7 @@ import { CheckoutComponent } from './component/dynamic/checkout/checkout.compone
 import { ProductInfoComponent } from './component/dynamic/product-info/product-info.component';
 import { ProductImageComponent } from './component/dynamic/product-image/product-image.component';
 import { SuccessComponent } from './common/success/success.component';
+import { CancelComponent } from './common/cancel/cancel.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SuccessComponent } from './common/success/success.component';
     CheckoutComponent,
     ProductInfoComponent,
     ProductImageComponent,
-    SuccessComponent
+    SuccessComponent,
+    CancelComponent
   ],
   imports: [
     BrowserModule,
