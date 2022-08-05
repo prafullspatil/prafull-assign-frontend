@@ -30,7 +30,7 @@ export class CheckoutComponent implements OnInit {
     // console.log(data);
     const payment = {
       name: this.productData.name,
-      currency: 'inr',
+      currency: 'INR',
       // image: this.productData.images.url1,
       amount: this.productData.price * 100,
       quantity: qty,

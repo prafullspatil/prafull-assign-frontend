@@ -7,8 +7,9 @@ import { Injectable } from '@angular/core';
 export class ProductService {
 
   constructor(private http: HttpClient) { }
-
+  
   getProductById() {
+   
     return this.http.get<any>('http://localhost:9091/api/get-product/1');
   }
 }
